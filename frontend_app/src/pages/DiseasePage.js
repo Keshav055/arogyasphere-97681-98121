@@ -1,14 +1,88 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
+import axios from "axios";
+
 /**
- * Chronic Disease Dashboard component stub.
+ * Chronic Disease Dashboard with data widgets, reminders, record upload.
  */
-const DiseasePage = () => (
-  <div className="container" style={{ marginTop: 28 }}>
-    <h2>Disease Dashboard</h2>
-    <div className="card" style={{ maxWidth: 400, margin: "auto" }}>
-      <p>(Chronic disease data and widgets appear here)</p>
+const DiseasePage = () => {
+  const [metrics, setMetrics] = useState([]);
+  const [reminders, setReminders] = useState([]);
+  const [file, setFile] = useState(null);
+  const [uploading, setUploading] = useState(false);
+  const [uploadStatus, setUploadStatus] = useState("");
+  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
+  const token = localStorage.getItem("token");
+  const fileRef = useRef();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(`${API_BASE}/chronic`, {
+          headers: token ? { Authorization: `Bearer ${token}` } : {},
+        });
+        setMetrics(res.data.metrics || []);
+        setReminders(res.data.reminders || []);
+      } catch {
+        setMetrics([]);
+        setReminders([]);
+      }
+    };
+    fetchData();
+  }, []);
+
+  // PUBLIC_INTERFACE
+  const handleFileUpload = async (e) => {
+    e.preventDefault();
+    setUploading(true);
+    setUploadStatus("");
+    try {
+      const formData = new FormData();
+      formData.append("file", file);
+      await axios.post(`${API_BASE}/chronic/upload`, formData, {
+        headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), "Content-Type": "multipart/form-data" }
+      });
+      setUploadStatus("Uploaded successfully!");
+      setFile(null);
+      fileRef.current.value = "";
+    } catch {
+      setUploadStatus("Upload failed.");
+    }
+    setUploading(false);
+  };
+
+  return (
+    <div className="container" style={{ marginTop: 28, maxWidth: 440 }}>
+      <h2>Chronic Disease Dashboard</h2>
+      <div className="card" style={{ margin: "1em auto", padding: 12 }}>
+        <strong>Disease Metrics</strong>
+        {metrics.length === 0
+          ? <p>No metrics yet.</p>
+          : metrics.map((m, idx) => (
+              <div key={idx} style={{ margin: "6px 0" }}>
+                <b>{m.label}:</b> {m.value} {m.unit || ""}
+              </div>
+            ))}
+      </div>
+      <div className="card" style={{ margin: "1em auto", padding: 12 }}>
+        <strong>Medication Reminders</strong>
+        <ul>
+          {reminders.length === 0 ? <li>None scheduled.</li> :
+            reminders.map((rem, i) => <li key={i}>{rem}</li>)
+          }
+        </ul>
+      </div>
+      <div className="card" style={{ margin: "1em auto", padding: 12 }}>
+        <strong>Upload Medical Record</strong>
+        <form onSubmit={handleFileUpload}>
+          <input type="file" ref={fileRef} onChange={e => setFile(e.target.files[0])} />
+          <button className="btn" type="submit" disabled={uploading} style={{ marginLeft: 10 }}>
+            {uploading ? "Uploading…" : "Upload"}
+          </button>
+        </form>
+        {uploadStatus && <div style={{ fontSize: 12, marginTop: 4 }}>{uploadStatus}</div>}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default DiseasePage;

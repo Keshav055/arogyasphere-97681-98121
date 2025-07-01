@@ -14,6 +14,8 @@ import TeleConsultPage from "./pages/TeleConsultPage";
 import CommunityPage from "./pages/CommunityPage";
 import ProfilePage from "./pages/ProfilePage";
 import NotFoundPage from "./pages/NotFoundPage";
+import EducationPage from "./pages/EducationPage";
+import AIChatPage from "./pages/AIChatPage";
 
 // PUBLIC_INTERFACE
 function App() {
@@ -56,6 +58,8 @@ function App() {
             <Route path="/teleconsult" element={<TeleConsultPage />} />
             <Route path="/community" element={<CommunityPage />} />
             <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/education" element={<EducationPage />} />
+            <Route path="/ai" element={<AIChatPage />} />
 
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
