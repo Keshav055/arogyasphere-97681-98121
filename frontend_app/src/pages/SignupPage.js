@@ -5,7 +5,7 @@ import { useAuth } from "../auth/AuthContext";
 
 /**
  * Signup page for user registration (email/phone + password).
- * Calls /auth/register backend endpoint.
+ * Calls /signup backend endpoint.
  */
 const SignupPage = () => {
   const [form, setForm] = useState({ email: "", phone: "", password: "" });
@@ -21,17 +21,21 @@ const SignupPage = () => {
     setError("");
     try {
       const payload = { ...form };
-      if (!payload.email && !payload.phone) {
-        setError("Please provide Email or Phone.");
+      // Backend requires both email and phone -- enforce here
+      if (!payload.email || !payload.phone) {
+        setError("Please provide both Email and Phone.");
         return;
       }
+      // Align endpoint and payload with backend requirement
       const res = await api.post(
-        "/auth/register",
+        "/signup",
         payload
       );
-      loginWithToken(res.data.access_token);
+      // Use token field as returned by backend
+      loginWithToken(res.data.token);
       navigate("/dashboard");
     } catch (err) {
+      // Show backend error detail, fallback generic
       setError(
         err?.response?.data?.detail || "Signup failed. Please try a different email/phone."
       );
