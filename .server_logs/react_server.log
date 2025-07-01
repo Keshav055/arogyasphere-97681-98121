@@ -6,180 +6,14 @@ Attempting to bind to HOST environment variable: 0.0.0.0
 If this was unintentional, check that you haven't mistakenly set it in your shell.
 Learn more here: https://cra.link/advanced-config
 
-(node:5934) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:17401) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:5934) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:17401) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
-Compiled successfully!
-
-You can now view react-kavia in the browser.
-
-  Local:            http://localhost:3000
-  On Your Network:  http://172.17.0.2:3000
-
-Note that the development build is not optimized.
-To create a production build, use npm run build.
-
-webpack compiled successfully
-Compiling...
 Compiled with warnings.
 
 [eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/TeleConsultPage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/TeleConsultPage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/pages/CommunityPage.js
-  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/TeleConsultPage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/CommunityPage.js
-  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/TeleConsultPage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/pages/CommunityPage.js
-  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/ProfilePage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/TeleConsultPage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-Search for the keywords to learn more about each warning.
-To ignore, add // eslint-disable-next-line to the line before.
-
-WARNING in [eslint] 
-src/pages/CommunityPage.js
-  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DashboardPage.js
-  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/DiseasePage.js
-  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/ProfilePage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-src/pages/TeleConsultPage.js
-  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
-
-webpack compiled with 1 warning
-Compiling...
-Compiled with warnings.
-
-[eslint] 
-src/App.js
-  Line 17:8:  'EducationPage' is defined but never used  no-unused-vars
-  Line 18:8:  'AIChatPage' is defined but never used     no-unused-vars
-
 src/pages/CommunityPage.js
   Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
 
@@ -202,10 +36,186 @@ Search for the keywords to learn more about each warning.
 To ignore, add // eslint-disable-next-line to the line before.
 
 WARNING in [eslint] 
-src/App.js
-  Line 17:8:  'EducationPage' is defined but never used  no-unused-vars
-  Line 18:8:  'AIChatPage' is defined but never used     no-unused-vars
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
 
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DashboardPage.js
+  Line 30:6:  React Hook useEffect has a missing dependency: 'API_BASE'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/DiseasePage.js
+  Line 31:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/EducationPage.js
+  Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/ProfilePage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/pages/TeleConsultPage.js
+  Line 30:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
 src/pages/CommunityPage.js
   Line 27:6:  React Hook useEffect has missing dependencies: 'API_BASE' and 'token'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
 

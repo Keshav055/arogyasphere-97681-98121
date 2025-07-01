@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuth } from "../auth/AuthContext";
 
 /**
  * Signup page for user registration (email/phone + password).
@@ -10,6 +11,7 @@ const SignupPage = () => {
   const [form, setForm] = useState({ email: "", phone: "", password: "" });
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { loginWithToken } = useAuth();
 
   const handleChange = (e) =>
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
@@ -27,11 +29,11 @@ const SignupPage = () => {
         `${process.env.REACT_APP_API_BASE || "http://localhost:3001"}/auth/register`,
         payload
       );
-      localStorage.setItem("token", res.data.access_token);
+      loginWithToken(res.data.access_token);
       navigate("/dashboard");
     } catch (err) {
       setError(
-        err.response?.data?.detail || "Signup failed. Please try a different email/phone."
+        err?.response?.data?.detail || "Signup failed. Please try a different email/phone."
       );
     }
   };

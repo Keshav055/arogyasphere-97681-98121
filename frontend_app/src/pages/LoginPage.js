@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useAuth } from "../auth/AuthContext";
 
 /**
  * Login page for user authentication (email/phone + password).
@@ -8,14 +9,16 @@ import axios from "axios";
  */
 const LoginPage = () => {
   const [form, setForm] = useState({ username: "", password: "" });
-  const [error, setError] = useState("");
+  const [localError, setLocalError] = useState("");
   const navigate = useNavigate();
+  const { loginWithToken, error, setError } = useAuth();
 
   const handleChange = (e) =>
     setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLocalError("");
     setError("");
     try {
       const params = new URLSearchParams();
@@ -27,9 +30,10 @@ const LoginPage = () => {
         params,
         { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
       );
-      localStorage.setItem("token", res.data.access_token);
+      loginWithToken(res.data.access_token);
       navigate("/dashboard");
     } catch (err) {
+      setLocalError("Login failed: incorrect credentials.");
       setError("Login failed: incorrect credentials.");
     }
   };
@@ -66,7 +70,7 @@ const LoginPage = () => {
       <div style={{ fontSize: 12 }}>
         Don't have an account? <button style={{ color: "#3c83af", background: "none", border: "none" }} onClick={() => navigate("/signup")}>Sign up</button>
       </div>
-      {error && <div style={{ color: "red", marginTop: 8 }}>{error}</div>}
+      {(localError || error) && <div style={{ color: "red", marginTop: 8 }}>{localError || error}</div>}
     </div>
   );
 };
