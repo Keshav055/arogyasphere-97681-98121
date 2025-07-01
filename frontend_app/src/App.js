@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext, useContext } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, useNavigate } from "react-router-dom";
 import BottomNav from "./components/BottomNav";
+import NotificationBanner from "./components/NotificationBanner";
 import "./App.css";
 
 // Pages (one per major module)
@@ -16,10 +17,14 @@ import ProfilePage from "./pages/ProfilePage";
 import NotFoundPage from "./pages/NotFoundPage";
 import EducationPage from "./pages/EducationPage";
 import AIChatPage from "./pages/AIChatPage";
+import ResourceMapPage from "./pages/ResourceMapPage"; // new
 
 // Auth
 import { AuthProvider, useAuth } from "./auth/AuthContext";
 import ProtectedRoute from "./auth/ProtectedRoute";
+
+// Notification context for app-wide banners/notifications
+export const NotificationContext = createContext(null);
 
 // HeaderBar to show theme toggle and logout if authenticated
 const HeaderBar = ({ theme, toggleTheme }) => {
@@ -71,6 +76,7 @@ const HeaderBar = ({ theme, toggleTheme }) => {
 // PUBLIC_INTERFACE
 function App() {
   const [theme, setTheme] = useState("light");
+  const [banner, setBanner] = useState({ message: "", type: "info" });
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -81,64 +87,84 @@ function App() {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
 
+  // Set a global notification banner
+  const notify = ({ message, type = "info", timeout = 3800 }) => {
+    setBanner({ message, type });
+    if (timeout) {
+      setTimeout(() => setBanner({ message: "", type: "info" }), timeout);
+    }
+  };
+
   return (
     <AuthProvider>
-      <Router>
-        <div className="App">
-          <HeaderBar theme={theme} toggleTheme={toggleTheme} />
-          <div style={{ paddingBottom: 64 }}>
-            <Routes>
-              <Route path="/" element={<Navigate to="/dashboard" />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signup" element={<SignupPage />} />
-              <Route path="/oauth" element={<OAuthPage />} />
+      <NotificationContext.Provider value={notify}>
+        <Router>
+          <div className="App">
+            <HeaderBar theme={theme} toggleTheme={toggleTheme} />
+            <NotificationBanner
+              message={banner.message}
+              type={banner.type}
+              onClose={() => setBanner({ message: "", type: "info" })}
+            />
+            <div style={{ paddingBottom: 64 }}>
+              <Routes>
+                <Route path="/" element={<Navigate to="/dashboard" />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/signup" element={<SignupPage />} />
+                <Route path="/oauth" element={<OAuthPage />} />
 
-              <Route path="/dashboard" element={
-                <ProtectedRoute>
-                  <DashboardPage />
-                </ProtectedRoute>
-              } />
-              <Route path="/wellness/*" element={
-                <ProtectedRoute>
-                  <WellnessPage />
-                </ProtectedRoute>
-              } />
-              <Route path="/chronic" element={
-                <ProtectedRoute>
-                  <DiseasePage />
-                </ProtectedRoute>
-              } />
-              <Route path="/teleconsult" element={
-                <ProtectedRoute>
-                  <TeleConsultPage />
-                </ProtectedRoute>
-              } />
-              <Route path="/community" element={
-                <ProtectedRoute>
-                  <CommunityPage />
-                </ProtectedRoute>
-              } />
-              <Route path="/profile" element={
-                <ProtectedRoute>
-                  <ProfilePage />
-                </ProtectedRoute>
-              } />
-              <Route path="/education" element={
-                <ProtectedRoute>
-                  <EducationPage />
-                </ProtectedRoute>
-              } />
-              <Route path="/ai" element={
-                <ProtectedRoute>
-                  <AIChatPage />
-                </ProtectedRoute>
-              } />
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
+                <Route path="/dashboard" element={
+                  <ProtectedRoute>
+                    <DashboardPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/wellness/*" element={
+                  <ProtectedRoute>
+                    <WellnessPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/chronic" element={
+                  <ProtectedRoute>
+                    <DiseasePage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/teleconsult" element={
+                  <ProtectedRoute>
+                    <TeleConsultPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/community" element={
+                  <ProtectedRoute>
+                    <CommunityPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/community/resource-map" element={
+                  <ProtectedRoute>
+                    <ResourceMapPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/profile" element={
+                  <ProtectedRoute>
+                    <ProfilePage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/education" element={
+                  <ProtectedRoute>
+                    <EducationPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="/ai" element={
+                  <ProtectedRoute>
+                    <AIChatPage />
+                  </ProtectedRoute>
+                } />
+                <Route path="*" element={<NotFoundPage />} />
+              </Routes>
+            </div>
+            <BottomNav />
           </div>
-          <BottomNav />
-        </div>
-      </Router>
+        </Router>
+      </NotificationContext.Provider>
     </AuthProvider>
   );
 }
