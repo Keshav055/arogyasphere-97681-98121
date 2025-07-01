@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * Community forum: post stream with add-post, comment modal, and events.
@@ -9,15 +9,11 @@ const CommunityPage = () => {
   const [newPost, setNewPost] = useState("");
   const [status, setStatus] = useState("");
   const [commenting, setCommenting] = useState({ open: false, postId: null, comments: [], comment: "" });
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-  const token = localStorage.getItem("token");
-
+  // PUBLIC_INTERFACE
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/community/posts`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-        });
+        const res = await api.get("/community/posts");
         setPosts(res.data.posts || []);
       } catch {
         setPosts([]);
@@ -31,11 +27,7 @@ const CommunityPage = () => {
     e.preventDefault();
     setStatus("");
     try {
-      await axios.post(
-        `${API_BASE}/community/posts`,
-        { content: newPost },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
-      );
+      await api.post("/community/posts", { content: newPost });
       setStatus("Posted!");
       setNewPost("");
     } catch {
@@ -46,10 +38,7 @@ const CommunityPage = () => {
   // PUBLIC_INTERFACE
   const openCommentModal = async (postId) => {
     try {
-      const res = await axios.get(
-        `${API_BASE}/community/posts/${postId}/comments`,
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
-      );
+      const res = await api.get(`/community/posts/${postId}/comments`);
       setCommenting({
         open: true, postId,
         comments: res.data.comments || [],
@@ -63,11 +52,7 @@ const CommunityPage = () => {
   const handleAddComment = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        `${API_BASE}/community/posts/${commenting.postId}/comments`,
-        { content: commenting.comment },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
-      );
+      await api.post(`/community/posts/${commenting.postId}/comments`, { content: commenting.comment });
       setCommenting(c => ({ ...c, comment: "" }));
       setStatus("Comment added!");
     } catch {

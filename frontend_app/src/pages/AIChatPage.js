@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * AI Health Assistant Chat Page – voice input placeholder, threaded chat UI.
@@ -8,9 +8,6 @@ const AIChatPage = () => {
   const [chat, setChat] = useState([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-  const token = localStorage.getItem("token");
-
   // PUBLIC_INTERFACE
   const sendChat = async (e) => {
     e.preventDefault();
@@ -19,10 +16,9 @@ const AIChatPage = () => {
     setInput("");
     setLoading(true);
     try {
-      const res = await axios.post(
-        `${API_BASE}/ai/assistant`,
-        { message: input },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+      const res = await api.post(
+        "/ai/assistant",
+        { message: input }
       );
       setChat((prev) => [...prev.slice(0, -1), { role: "bot", msg: res.data.reply || "No response." }]);
     } catch {

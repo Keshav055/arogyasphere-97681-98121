@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * Tele-consultation, appointment booking, session list, and prescription download.
@@ -10,15 +10,10 @@ const TeleConsultPage = () => {
   const [booking, setBooking] = useState({ doctor: "", date: "", reason: "" });
   const [prescriptions, setPrescriptions] = useState([]);
   const [status, setStatus] = useState("");
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-  const token = localStorage.getItem("token");
-
   useEffect(() => {
     const fetchConsults = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/teleconsult`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-        });
+        const res = await api.get("/teleconsult");
         setAppointments(res.data.appointments || []);
         setPrescriptions(res.data.prescriptions || []);
       } catch {
@@ -34,9 +29,7 @@ const TeleConsultPage = () => {
     e.preventDefault();
     setStatus("");
     try {
-      await axios.post(`${API_BASE}/teleconsult/book`, booking, {
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-      });
+      await api.post("/teleconsult/book", booking);
       setStatus("Appointment booked!");
       setShowModal(false);
     } catch {
@@ -48,9 +41,9 @@ const TeleConsultPage = () => {
   const handlePrescriptionDownload = async (fileId) => {
     setStatus("");
     try {
-      const res = await axios.get(
-        `${API_BASE}/teleconsult/prescriptions/${fileId}`,
-        { headers: token ? { Authorization: `Bearer ${token}` } : {}, responseType: "blob" }
+      const res = await api.get(
+        `/teleconsult/prescriptions/${fileId}`,
+        { responseType: "blob" }
       );
       const url = window.URL.createObjectURL(new Blob([res.data]));
       const link = document.createElement("a");

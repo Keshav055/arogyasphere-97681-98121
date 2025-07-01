@@ -1,7 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from "react";
-import axios from "axios";
-
-const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
+import { api, API_BASE } from "../api";
 const TOKEN_STORE_KEY = "token";
 
 const AuthContext = createContext(null);
@@ -40,9 +38,7 @@ export function AuthProvider({ children }) {
     setLoading(true);
     setError("");
     try {
-      const res = await axios.get(`${API_BASE}/auth/whoami`, {
-        headers: { Authorization: `Bearer ${token}` },
-      });
+      const res = await api.get(`/auth/whoami`);
       setUser(res.data || null);
       setLoading(false);
     } catch (err) {

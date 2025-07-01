@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { api } from "../api";
 import { useAuth } from "../auth/AuthContext";
 
 /**
@@ -16,8 +16,8 @@ const OAuthPage = () => {
   const handleLogin = async () => {
     setError("");
     try {
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_BASE || "http://localhost:3001"}/auth/oauth`,
+      const res = await api.post(
+        "/auth/oauth",
         { provider, token: token }
       );
       loginWithToken(res.data.access_token);

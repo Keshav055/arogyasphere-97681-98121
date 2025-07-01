@@ -22,3 +22,1409 @@ Note that the development build is not optimized.
 To create a production build, use npm run build.
 
 webpack compiled successfully
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/AIChatPage.js
+  Line 22:25:  'axios' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/AIChatPage.js
+  Line 2:10:  'api' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/AIChatPage.js
+  Line 22:25:  'axios' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/LoginPage.js
+  Line 28:25:  'axios' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:10:  'api' is defined but never used       no-unused-vars
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/LoginPage.js
+  Line 28:25:  'axios' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/CommunityPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/CommunityPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 30:13:  'api' is not defined  no-undef
+  Line 41:25:  'api' is not defined  no-undef
+  Line 55:13:  'api' is not defined  no-undef
+
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/DashboardPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/DashboardPage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 34:25:  'api' is not defined  no-undef
+
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/DiseasePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/DiseasePage.js
+  Line 18:27:  'api' is not defined  no-undef
+  Line 37:13:  'api' is not defined  no-undef
+
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/EducationPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/EducationPage.js
+  Line 14:27:  'api' is not defined  no-undef
+
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/OAuthPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/OAuthPage.js
+  Line 19:25:  'api' is not defined  no-undef
+
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/ProfilePage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/ProfilePage.js
+  Line 17:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 47:13:  'api' is not defined  no-undef
+
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/SignupPage.js
+  Line 3:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/SignupPage.js
+  Line 28:25:  'api' is not defined  no-undef
+
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/TeleConsultPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/TeleConsultPage.js
+  Line 16:27:  'api' is not defined  no-undef
+  Line 32:13:  'api' is not defined  no-undef
+  Line 44:25:  'api' is not defined  no-undef
+
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/WellnessPage.js
+  Line 2:8:  'axios' is defined but never used  no-unused-vars
+
+ERROR in [eslint] 
+src/pages/WellnessPage.js
+  Line 27:27:  'api' is not defined  no-undef
+  Line 43:13:  'api' is not defined  no-undef
+  Line 49:25:  'api' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/auth/AuthContext.js
+  Line 2:15:  'API_BASE' is defined but never used  no-unused-vars
+
+src/pages/LoginPage.js
+  Line 3:15:  'API_BASE' is defined but never used  no-unused-vars
+
+webpack compiled with 1 warning

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * Main landing dashboard for ArogyaMitr with personalized widgets.
@@ -10,16 +10,11 @@ const DashboardPage = () => {
   const [loading, setLoading] = useState(true);
   const [aiInput, setAiInput] = useState("");
   const [aiChat, setAiChat] = useState([]);
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-
   useEffect(() => {
     const fetchDashboard = async () => {
       setLoading(true);
       try {
-        const token = localStorage.getItem("token");
-        const res = await axios.get(`${API_BASE}/dashboard`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-        });
+        const res = await api.get("/dashboard");
         setDashboard(res.data);
       } catch {
         setDashboard(null);
@@ -36,11 +31,9 @@ const DashboardPage = () => {
     setAiChat((prev) => [...prev, { user: aiInput, bot: "Loading..." }]);
     setAiInput("");
     try {
-      const token = localStorage.getItem("token");
-      const res = await axios.post(
-        `${API_BASE}/ai/assistant`,
-        { message: aiInput },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+      const res = await api.post(
+        "/ai/assistant",
+        { message: aiInput }
       );
       setAiChat((prev) => [
         ...prev.slice(0, -1),

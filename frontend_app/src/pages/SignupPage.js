@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { api } from "../api";
 import { useAuth } from "../auth/AuthContext";
 
 /**
@@ -25,8 +25,8 @@ const SignupPage = () => {
         setError("Please provide Email or Phone.");
         return;
       }
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_BASE || "http://localhost:3001"}/auth/register`,
+      const res = await api.post(
+        "/auth/register",
         payload
       );
       loginWithToken(res.data.access_token);

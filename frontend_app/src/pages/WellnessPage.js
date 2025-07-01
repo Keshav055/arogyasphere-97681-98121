@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * Wellness module - Diet, Fitness, Mindfulness, Sleep.
@@ -11,8 +11,6 @@ const tabs = [
   { label: "Mindfulness", key: "mind" },
   { label: "Sleep", key: "sleep" },
 ];
-
-const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
 
 const WellnessPage = () => {
   const [tab, setTab] = useState(0);
@@ -26,10 +24,7 @@ const WellnessPage = () => {
     setLoading(true);
     const fetchWidgets = async () => {
       try {
-        const token = localStorage.getItem("token");
-        const res = await axios.get(`${API_BASE}/wellness/${tabs[tab].key}`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-        });
+        const res = await api.get(`/wellness/${tabs[tab].key}`);
         setWidgets(res.data.widgets || []);
         setLog(res.data.log || []);
       } catch {
@@ -45,17 +40,13 @@ const WellnessPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const token = localStorage.getItem("token");
-      await axios.post(
-        `${API_BASE}/wellness/${tabs[tab].key}/log`,
-        { value: input },
-        { headers: token ? { Authorization: `Bearer ${token}` } : {} }
+      await api.post(
+        `/wellness/${tabs[tab].key}/log`,
+        { value: input }
       );
       setInput("");
       // Re-fetch log
-      const res = await axios.get(`${API_BASE}/wellness/${tabs[tab].key}`, {
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-      });
+      const res = await api.get(`/wellness/${tabs[tab].key}`);
       setLog(res.data.log || []);
     } catch {}
   };

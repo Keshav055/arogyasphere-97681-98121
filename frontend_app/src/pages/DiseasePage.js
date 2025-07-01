@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * Chronic Disease Dashboard with data widgets, reminders, record upload.
@@ -10,16 +10,12 @@ const DiseasePage = () => {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [uploadStatus, setUploadStatus] = useState("");
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-  const token = localStorage.getItem("token");
   const fileRef = useRef();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/chronic`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-        });
+        const res = await api.get("/chronic");
         setMetrics(res.data.metrics || []);
         setReminders(res.data.reminders || []);
       } catch {
@@ -38,8 +34,8 @@ const DiseasePage = () => {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      await axios.post(`${API_BASE}/chronic/upload`, formData, {
-        headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), "Content-Type": "multipart/form-data" }
+      await api.post("/chronic/upload", formData, {
+        headers: { "Content-Type": "multipart/form-data" }
       });
       setUploadStatus("Uploaded successfully!");
       setFile(null);

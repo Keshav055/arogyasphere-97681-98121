@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { api, API_BASE } from "../api";
 import { useAuth } from "../auth/AuthContext";
 
 /**
@@ -25,8 +25,8 @@ const LoginPage = () => {
       params.append("username", form.username);
       params.append("password", form.password);
       // Try email or phone in username field as per backend
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_BASE || "http://localhost:3001"}/auth/token`,
+      const res = await api.post(
+        "/auth/token",
         params,
         { headers: { "Content-Type": "application/x-www-form-urlencoded" } }
       );

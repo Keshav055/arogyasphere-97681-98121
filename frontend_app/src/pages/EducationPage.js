@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * Health Education Hub – list articles/videos, detail modal, filter.
@@ -8,14 +8,10 @@ const EducationPage = () => {
   const [items, setItems] = useState([]);
   const [query, setQuery] = useState("");
   const [modal, setModal] = useState(null);
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-  const token = localStorage.getItem("token");
-
   useEffect(() => {
     const fetchItems = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/education`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
+        const res = await api.get("/education", {
           params: query ? { q: query } : {},
         });
         setItems(res.data.items || []);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import axios from "axios";
+import { api } from "../api";
 
 /**
  * User profile, settings, avatar upload.
@@ -11,15 +11,10 @@ const ProfilePage = () => {
   const [avatar, setAvatar] = useState(null);
   const [status, setStatus] = useState("");
   const fileRef = useRef();
-  const API_BASE = process.env.REACT_APP_API_BASE || "http://localhost:3001";
-  const token = localStorage.getItem("token");
-
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const res = await axios.get(`${API_BASE}/profile`, {
-          headers: token ? { Authorization: `Bearer ${token}` } : {},
-        });
+        const res = await api.get("/profile");
         setProfile(res.data);
         setForm({ name: res.data.name, email: res.data.email, phone: res.data.phone });
       } catch {
@@ -34,9 +29,7 @@ const ProfilePage = () => {
     e.preventDefault();
     setStatus("");
     try {
-      await axios.put(`${API_BASE}/profile`, form, {
-        headers: token ? { Authorization: `Bearer ${token}` } : {},
-      });
+      await api.put("/profile", form);
       setStatus("Profile updated!");
       setEdit(false);
     } catch {
@@ -51,8 +44,8 @@ const ProfilePage = () => {
     try {
       const formData = new FormData();
       formData.append("avatar", avatar);
-      await axios.post(`${API_BASE}/profile/avatar`, formData, {
-        headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), "Content-Type": "multipart/form-data" }
+      await api.post("/profile/avatar", formData, {
+        headers: { "Content-Type": "multipart/form-data" }
       });
       setStatus("Avatar uploaded!");
       fileRef.current.value = "";
