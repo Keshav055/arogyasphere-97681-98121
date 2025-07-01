@@ -2,6 +2,8 @@
 
 ## Date
 2024-06-12
+(Last validated: integration test re-run – flow confirmed as of [LATEST-REVIEWED])
+
 
 ## Test Environment
 - **Frontend**: React app  
